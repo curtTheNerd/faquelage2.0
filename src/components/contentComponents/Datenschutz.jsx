@@ -10,7 +10,7 @@ const Datenschutz = () => {
         <li>info@faquelage.com</li>
         <li>+49 162 8922721</li>
       </ul>
-      <h2>Datenschutzerklärung</h2>
+      <h2>Datenschutz</h2>
       <ul>
         <li>Wir freuen uns über Ihr Interesse an unserer Band und unserer Website. 
           Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. 

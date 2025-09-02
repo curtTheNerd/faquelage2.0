@@ -16,15 +16,15 @@ const Footer = () => {
     <footer className='flex-center flex-col w-[100vw] h-[auto] mt-[5rem] p-[3rem] bg-[var(--bgColor1)]'>
 
       <div className='flex-center'>
-        <a href="https://www.instagram.com/faquelage/?locale=en_US" className='link' target='_blank' rel="noreferrer noopener"><BiLogoInstagramAlt className='icon text-[48px] hover:text-[rgb(173,171,171)] transition-[all_0.3s_ease-in-out]' /></a>
-        <a href="https://www.facebook.com/faquelage/" className='link' target='_blank' rel="noreferrer noopener"><FaFacebook className='icon text-[40px] hover:text-[rgb(68,83,255)] transition-[all_0.3s_ease-in-out]' /></a>
-        <a href="https://www.youtube.com/channel/UCQgfM9ENDqaf25Lm-AbaapA" className='link' target='_blank' rel="noreferrer noopener"><FaYoutube className='icon text-[44px] hover:text-[rgb(243,26,26)] transition-[all_0.3s_ease-in-out]' /></a>
-        <a href="https://open.spotify.com/intl-de/album/1fmgk5J9jZjMylWKgvdnRI" className='link' target='_blank' rel="noreferrer noopener"><FaSpotify className='icon text-[40px] hover:text-[rgb(78,240,78)] transition-[all_0.3s_ease-in-out]' /></a>
+        <a href="https://www.instagram.com/faquelage/?locale=en_US" className='link' target='_blank' rel="noreferrer noopener"><BiLogoInstagramAlt className='icon text-[48px] hover:text-[rgb(173,171,171)] transition-all duration-300' /></a>
+        <a href="https://www.facebook.com/faquelage/" className='link' target='_blank' rel="noreferrer noopener"><FaFacebook className='icon text-[40px] hover:text-[rgb(68,83,255)] transition-all duration-300' /></a>
+        <a href="https://www.youtube.com/channel/UCQgfM9ENDqaf25Lm-AbaapA" className='link' target='_blank' rel="noreferrer noopener"><FaYoutube className='icon text-[44px] hover:text-[rgb(243,26,26)] transition-all duration-300' /></a>
+        <a href="https://open.spotify.com/intl-de/album/1fmgk5J9jZjMylWKgvdnRI" className='link' target='_blank' rel="noreferrer noopener"><FaSpotify className='icon text-[40px] hover:text-[rgb(78,240,78)] transition-all duration-300' /></a>
 
         {
           //Placeholder!
         }
-        <div><IoMdMail className='icon text-[42px] hover:text-[rgb(235,47,235)] transition-[all_0.3s_ease-in-out]' /></div>
+        <div><IoMdMail className='icon text-[42px] hover:text-[rgb(235,47,235)] transition-all duration-300' /></div>
         
         
         {//<Link to="/datenschutz" className="iconLinks" onClick={handleScrollToTop}><IoMdMail className='icon email' /></Link>

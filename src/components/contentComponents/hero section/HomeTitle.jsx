@@ -1,9 +1,8 @@
 
 const HomeTitle = () => {
     return (
-        <div className='flex-container-cols h-[10rem] mt-[10rem]' >
-            <h1 className="shadow-[5px_5px_7px_rgb(72,54,10)]"><span>Faque</span><span className="font-['Cedarville_Cursive',Helvetica,serif] transform-[rotateX(7deg)] origin-bottom-left">lage</span></h1>
-            <h2 className="subtitle">Boundless Blend of Music</h2>
+        <div className='flex-container-cols pt-[24vw] md:pt-[20vw] 2xl:pt-[15vw] pb-0' id="title" >
+            <h1 className="text-[2.75rem] sm:text-[3.2rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] 2xl:text-[5rem] text-[var(--pColor)] leading-1.5 "><span>Faque</span><span className="font-['Cedarville_Cursive',Helvetica,serif]">lage</span></h1>
         </div>
     )
 }

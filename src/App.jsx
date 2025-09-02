@@ -16,13 +16,13 @@ const App = () => {
       <Background />
       <Navbar />
       
-      <HomeBanner />
+      <HomeBanner></HomeBanner>
       <HomeTitle />
       <News />
-      
       <Tour />
       <About />
-      <Datenschutz />
+      <Media />
+
       <Footer />
     </>
   )

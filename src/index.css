@@ -34,14 +34,8 @@
   li {
     @apply list-none;
   }
-  h1 {
-    @apply text-[3.2rem] text-[var(--pColor)] leading-1.5;
-  }
   h2 {
-    @apply text-[1.75rem] md:text-[2rem] text-[var(--pColor)] text-center m-[0_auto] py-[4rem];
-  }
-  .ytVideo iframe {
-    
+    @apply text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] text-[var(--pColor)] text-center m-[0_auto] pt-[10rem] pb-[4rem];
   }
 }
 
@@ -54,6 +48,10 @@
     @apply m-[0_auto] max-w-[1440px] flex flex-col justify-center items-center w-[80%] sm:text-center sm:text-[1.2rem] pb-[2rem];
   }
 
+  .tour-section {
+    @apply flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 m-[0_auto] gap-[0.75rem] w-[100%];
+  }
+
   .icon {
     @apply text-[rgb(201,154,26)] m-[0.5rem] transition-[0.5s_ease-in-out];
   }
@@ -63,6 +61,14 @@
   }
 
   .navLink {
-    @apply text-[var(--textColor)] hover:text-[var(--textColorNegative)] hover:bg-[rgba(239,198,36,0.9)] text-[1.5rem] p-[1rem_4rem] md:p-[0.25rem_0.5rem] lg:p-[0.5rem_1rem] md:m-[0_0.25rem] lg:m-[0_0.75rem] rounded-[0.75rem] md:rounded-[1rem] transition-[0.5_ease] hover:transition-[0.5_ease];
+    @apply text-[var(--textColor)] hover:text-[var(--textColorNegative)] hover:bg-[rgba(239,198,36,0.8)] text-[1.5rem] p-[0.7rem_2.25rem_0.7rem_2.25rem] md:p-[0.25rem_0.5rem] lg:p-[0.5rem_1.5rem] 2xl:p-[0.5rem_2rem] md:m-[0_0.25rem] lg:m-[0_0.75rem] rounded-[1.25rem] md:rounded-[1.4rem] transition-all duration-300;
+  }
+
+  .vid-wrapper {
+    @apply relative w-full h-0 pt-[56.25%] mb-[3rem];
+  }
+
+  .vid-wrapper > div > iframe {
+    @apply absolute top-0 left-0 w-full h-full;
   }
 }

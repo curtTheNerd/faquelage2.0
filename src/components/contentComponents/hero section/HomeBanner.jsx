@@ -12,7 +12,6 @@ const images = [ img1, img2, img3, img4, img5, img6, img7 ];
 
 const HomeBanner = () => {
     const [imageIndex, setImageIndex] = useState(0);
-    const imageStyles = 'absolute flex-center w-[100vw] h-[50vw] bg-cover bg-no-repeat bg-center transition-opacity duration-2500';
 
     useEffect(() => {
 
@@ -24,9 +23,9 @@ const HomeBanner = () => {
     }, []);
 
     return (
-        <div className="relative w-full h-[50vw] py-[6rem] md:py-[7rem] xl:py-[0]" >
+        <div className="relative w-full h-[50vw] mb-[3rem] py-[6rem] md:py-[7rem]" >
             {images.map((image, index) => (
-                <img key={index} src={image} className={`${index === imageIndex ? 'opacity-100' : 'opacity-0'} ${imageStyles}`} />
+                <img key={index} src={image} className={`${index === imageIndex ? 'opacity-100' : 'opacity-0'} absolute top-[6rem] md:top-[7rem] w-full h-[50vw] bg-cover bg-no-repeat bg-center transition-opacity duration-2500`} />
             ))}
 
         </div>

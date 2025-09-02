@@ -228,7 +228,7 @@ export const NewsData = [
     id: newsImg1,
     src: newsImg1,
     title: 'Featured Video',
-    text: '... and further content on Youtube!',
+    text: '... and more on Youtube!',
     link: 'https://www.youtube.com/watch?v=OXdOKobg5sA&list=PLLki_nU8n8w3MZEAN4uta_8cCAejmJHkn',
     linkName: 'Shapes in the Water'
   },

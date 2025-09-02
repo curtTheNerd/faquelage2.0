@@ -4,7 +4,7 @@ import img from '../assets/Backround.jpg';
 const Background = () => {
   return (
     <div className='fixed w-[100%] h-[100%] top-0 left-0 -z-2'>
-        <img src={img} alt="#" id="backgroundImage" className='w-[100%] h-[100%] -z-1 bg-center bg-cover bg-fixed' />
+        <img src={img} alt="#" id="backgroundImage" className='w-[100%] h-[100%] -z-1 object-cover object-center ' />
     </div>
   )
 }

@@ -5,7 +5,7 @@ const Tour = () => {
   return (
     <div className="flex-container-cols" id="tour">
         <h2>Tour</h2>
-            <section className="flex flex-col m-[0_auto] gap-[0.5rem] w-[100%] pb-[2rem]">
+            <section className="tour-section">
                 {TourAktuell.map(data => {
                     return (
                         <TourCard
@@ -20,7 +20,7 @@ const Tour = () => {
             </section>
 
         <h2>Vergangene Shows</h2>
-        <section className="flex flex-col m-[0_auto] gap-[0.5rem] w-[100%]">
+        <section className="tour-section xl:grid-cols-4">
             {TourVergangenheit.map(data => {
                 return (
                     <TourCard

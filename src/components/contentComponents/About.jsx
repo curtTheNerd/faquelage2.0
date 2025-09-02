@@ -25,7 +25,7 @@ const About = () => {
             sie nicht nur miteinander, es ist, als wären sie in ständiger Resonanz zueinander.
             Faquelage lädt zu Abenden ein, die verfrickelte Komponierende, Musiker:innen, als auch Menschen, 
             die noch nie ein Instrument angefasst haben, genießen können."</p>
-            <p className='pb-[3em]'>Arne Herrmann - Komponist</p><br></br>
+            <p className='pb-[3em] text-center'>Arne Herrmann - Komponist</p><br></br>
       </section>
 
       <Gallery />

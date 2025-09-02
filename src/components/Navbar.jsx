@@ -18,13 +18,12 @@ const Navbar = () => {
             
             <div className='logoDiv cursor-pointer flex-center ml-[5%]' onClick={handleScrollToTop}>
                 <img src={logo} alt='#' className='w-[125px] md:w-[170px] p-[0.25rem]'></img>
-                <h2 className='text-[2rem] md:text-[2.4rem] font-[Times_New_Roman]'>[fakla&#658;]</h2>
+                <h2 className='text-[2rem] md:text-[2.4rem] font-[Times_New_Roman] p-[0]'>[fakla&#658;]</h2>
             </div>
 
-            <navbar className={`${menuDisplay} absolute h-[max-content] w-[80vw] rounded-[1rem] bg-[rgba(0,0,0,0.7)] top-[5rem] left-[45%] p-[1rem] transform-[translate(-50%)] shadow-[0_2px_4px_rgba(2,15,29,0.9)] transition-[0.2s ease-in-out] 
+            <navbar className={`${menuDisplay} absolute h-[60vh] w-[80vw] rounded-[1rem] bg-[rgba(0,0,0,0.7)] top-[6.25rem] left-[50%] p-[1rem] transform-[translate(-50%)] shadow-[0_2px_4px_rgba(2,15,29,0.9)] 
                         md:flex md:justify-end md:relative md:w-[100%] md:h-[auto] md:rounded-[0] md:bg-[rgba(0,0,0,0)] md:top-[0] md:left-[0] md:p-[0] md:transform-[translate(0%)] md:shadow-[0_0_0_rgba(0,0,0,0)] md:pr-[3rem]`}>
-                {/*     */}
-                <ul className="flex-center flex-col md:flex-row p-[1.5rem_0]">
+                <ul className="relative w-full h-full flex flex-col items-center justify-around md:justify-end py-[2rem] md:flex-row">
                     <li className=""><a href="#" className='navLink' onClick={handleScrollToTop}>Home</a></li>
                     <li className=""><a href="#tour" className='navLink'>Tour</a></li>
                     <li className=""><a href="#about" className='navLink'>About</a></li>
