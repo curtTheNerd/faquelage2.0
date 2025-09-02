@@ -2,7 +2,7 @@ import Gallery from "../functionalComponents/Gallery";
 
 const About = () => {
   return (
-    <div className="flex-container" id="about">
+    <div className="flex-container-cols" id="about">
       <h2>About</h2>
       <section className="">
             <p className='pb-[2.5rem]'>Faquelage [faklaʒ] - dieses französische Kunstwort erdachte sich das Leipziger Trio, um in kleiner Besetzung große Melodien 

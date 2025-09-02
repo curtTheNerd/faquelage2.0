@@ -1,7 +1,7 @@
 
 const Datenschutz = () => {
   return (
-    <section className='m-[0_auto] max-w-[1440px] flex flex-col justify-center items-center w-[80%]'>
+    <section className='flex-container-cols text-left'>
       <h2>Impressum</h2>
       <ul className="md:pr-[40%]">
         <li>Hentschel Holzapfel Seidel GbR</li>

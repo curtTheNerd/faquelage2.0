@@ -8,7 +8,7 @@ const Media = () => {
   }
   
   return (
-    <section className='relative flex-center flex-col w-[90%]' id="media">
+    <section className='flex-container-cols' id="media">
         <h2>Featured Video</h2>
       
         <div className='videoContainer'>

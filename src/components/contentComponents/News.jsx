@@ -3,7 +3,7 @@ import NewsCard from "../functionalComponents/NewsCard";
 
 const News = () => {
     return (
-        <div className="flex-center gap-[2rem] flex-wrap pb-[4rem]">
+        <div className="flex-container gap-[2rem] flex-wrap p-[8rem_0_4rem_0]">
             {Data.map((data) => <NewsCard key={data.id} data={data} /> )}
         </div>
   );

@@ -10,6 +10,7 @@
     --gradientColor: linear-gradient(to right, yellow, rgb(255, 195, 42));
     --bgColor1: rgba(0, 0, 0, 0.4);
     --bgColor2: rgba(0, 0, 0, 0.2);
+    --bgColor3: rgba(0, 0, 0, 0.1);
     
     font-family: 'GFS Didot', Helvetica, Avenir, system-ui, Arial, sans-serif;
     text-rendering: optimizeLegibility;
@@ -21,7 +22,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply flex flex-col items-center m-[0_auto] max-w-[100vw] min-w-[320px] min-h-[100vh]; 
+    @apply flex flex-col items-center m-[0_auto]; 
   }
   a, li, p, h1, h2, h3, h4, h5 {
     @apply no-underline tracking-[0.44px];
@@ -34,7 +35,7 @@
     @apply list-none;
   }
   h1 {
-    @apply text-[3.2rem] leading-1.5;
+    @apply text-[3.2rem] text-[var(--pColor)] leading-1.5;
   }
   h2 {
     @apply text-[1.75rem] md:text-[2rem] text-[var(--pColor)] text-center m-[0_auto] py-[4rem];
@@ -46,7 +47,11 @@
 
 @layer components {
   .flex-container {
-    @apply m-[0_auto] max-w-[1440px] flex flex-col justify-center items-center w-[80%] sm:text-center sm:text-[1.2rem];
+    @apply m-[0_auto] max-w-[1440px] flex justify-center items-center w-[80%] sm:text-center sm:text-[1.2rem] pb-[2rem];
+  }
+
+  .flex-container-cols {
+    @apply m-[0_auto] max-w-[1440px] flex flex-col justify-center items-center w-[80%] sm:text-center sm:text-[1.2rem] pb-[2rem];
   }
 
   .icon {
@@ -58,6 +63,6 @@
   }
 
   .navLink {
-    @apply text-[var(--textColor)] hover:text-[var(--textColorNegative)] hover:bg-[var(--sColor)] text-[1.5rem] p-[1rem_4rem] rounded-[0.75rem] transition-[0.5_ease] hover:transition-[0.5_ease];
+    @apply text-[var(--textColor)] hover:text-[var(--textColorNegative)] hover:bg-[rgba(239,198,36,0.9)] text-[1.5rem] p-[1rem_4rem] md:p-[0.25rem_0.5rem] lg:p-[0.5rem_1rem] md:m-[0_0.25rem] lg:m-[0_0.75rem] rounded-[0.75rem] md:rounded-[1rem] transition-[0.5_ease] hover:transition-[0.5_ease];
   }
 }

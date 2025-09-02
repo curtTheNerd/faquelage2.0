@@ -3,9 +3,9 @@ import TourCard from '../functionalComponents/TourCard';
 
 const Tour = () => {
   return (
-    <div className="w-[90%] m-[0_auto]" id="tour">
+    <div className="flex-container-cols" id="tour">
         <h2>Tour</h2>
-            <section className="flex flex-col m-[0_auto] gap-[0.5rem] lg:w-[70%]">
+            <section className="flex flex-col m-[0_auto] gap-[0.5rem] w-[100%] pb-[2rem]">
                 {TourAktuell.map(data => {
                     return (
                         <TourCard
@@ -20,7 +20,7 @@ const Tour = () => {
             </section>
 
         <h2>Vergangene Shows</h2>
-        <section className="flex flex-col m-[0_auto] gap-[0.5rem] lg:w-[70%]">
+        <section className="flex flex-col m-[0_auto] gap-[0.5rem] w-[100%]">
             {TourVergangenheit.map(data => {
                 return (
                     <TourCard

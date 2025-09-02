@@ -13,7 +13,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className='mt-[5rem] flex flex-col items-center justify-center p-[32px] bg-[var(--bgColor1)]'>
+    <footer className='flex-center flex-col w-[100vw] h-[auto] mt-[5rem] p-[3rem] bg-[var(--bgColor1)]'>
 
       <div className='flex-center'>
         <a href="https://www.instagram.com/faquelage/?locale=en_US" className='link' target='_blank' rel="noreferrer noopener"><BiLogoInstagramAlt className='icon text-[48px] hover:text-[rgb(173,171,171)] transition-[all_0.3s_ease-in-out]' /></a>

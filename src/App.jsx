@@ -7,17 +7,21 @@ import About from "./components/contentComponents/About";
 import Media from "./components/contentComponents/Media";
 import Tour from "./components/contentComponents/Tour";
 import News from "./components/contentComponents/News";
+import HomeBanner from "./components/contentComponents/hero section/HomeBanner";
+import HomeTitle from "./components/contentComponents/hero section/HomeTitle";
 
 const App = () => {
   return(
     <>
       <Background />
       <Navbar />
+      
+      <HomeBanner />
+      <HomeTitle />
       <News />
+      
       <Tour />
       <About />
-
-      <Media />
       <Datenschutz />
       <Footer />
     </>
