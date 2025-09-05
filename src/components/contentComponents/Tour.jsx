@@ -4,7 +4,7 @@ import TourCard from '../functionalComponents/TourCard';
 const Tour = () => {
   return (
     <div className="flex-container-cols" id="tour">
-        <h2>Tour</h2>
+        <h2>Aktuell</h2>
             <section className="tour-section">
                 {TourAktuell.map(data => {
                     return (

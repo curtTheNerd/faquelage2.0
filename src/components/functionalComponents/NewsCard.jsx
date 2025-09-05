@@ -7,11 +7,11 @@ const NewsCard = ({ data }) => {
                     <img className="w-[300px] lg:w-[350px] xl:w-[375px] object-cover" src={data.src} alt={data.title} />
                 </div>
                 <div className="p-[1.5rem_0_2rem_0] text-center">
-                    <h4 className="text-[1.6rem] text-[var(--pColor)] pb-[1rem]">{data.title}</h4>
-                    <h5 className="text-[1.15rem] text-[rgb(182,136,22)] p-[0.15rem]">{data.text}</h5>
-                    <h5 className="p-[1rem] text-[1.4rem] text-[var(--pColor)] hover:text-[var(--textColor)] transition-[1s]">
+                    <h4 className="text-[1.7rem] lg:text-[2rem] text-[var(--pColor)] pb-[1rem]">{data.title}</h4>
+                    <h4 className="text-[1.4rem] lg:text-[1.6rem] text-[rgb(182,136,22)] p-[0.15rem]">{data.text}</h4>
+                    <h4 className="p-[1rem] text-[1.6rem] lg:text-[1.75rem] text-[var(--pColor)] hover:text-[var(--textColor)] transition-[1s]">
                         {data.linkName}
-                    </h5>
+                    </h4>
                 </div>
             </div>
         </a>

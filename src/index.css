@@ -5,7 +5,7 @@
   :root {
     --pColor: rgb(216, 181, 23);
     --sColor: rgb(152, 113, 14);
-    --textColor: rgb(210, 186, 153);
+    --textColor: antiquewhite;
     --textColorNegative: rgb(44, 41, 37);
     --gradientColor: linear-gradient(to right, yellow, rgb(255, 195, 42));
     --bgColor1: rgba(0, 0, 0, 0.4);
@@ -35,7 +35,7 @@
     @apply list-none;
   }
   h2 {
-    @apply text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] text-[var(--pColor)] text-center m-[0_auto] pt-[10rem] pb-[4rem];
+    @apply text-[1.75rem] sm:text-[1.9rem] md:text-[2.2rem] text-[var(--pColor)] text-center m-[0_auto] pt-[12rem] pb-[4rem];
   }
 }
 
@@ -53,7 +53,7 @@
   }
 
   .icon {
-    @apply text-[rgb(201,154,26)] m-[0.5rem] transition-[0.5s_ease-in-out];
+    @apply text-[rgb(201,154,26)] m-[0.5rem] transition-all duration-300;
   }
 
   .flex-center {
@@ -61,7 +61,10 @@
   }
 
   .navLink {
-    @apply text-[var(--textColor)] hover:text-[var(--textColorNegative)] hover:bg-[rgba(239,198,36,0.8)] text-[1.5rem] p-[0.7rem_2.25rem_0.7rem_2.25rem] md:p-[0.25rem_0.5rem] lg:p-[0.5rem_1.5rem] 2xl:p-[0.5rem_2rem] md:m-[0_0.25rem] lg:m-[0_0.75rem] rounded-[1.25rem] md:rounded-[1.4rem] transition-all duration-300;
+    @apply text-[var(--textColor)] hover:text-[var(--textColorNegative)] hover:bg-[rgba(239,198,36,0.8)] text-[1.5rem] p-[0.25rem_2.25rem_0.25rem_2.25rem] md:p-[0rem_0.75rem] lg:p-[0.25rem_1.25rem] 2xl:p-[0.25rem_1.5rem] md:m-[0_0.25rem] lg:m-[0_0.75rem] rounded-[1.5rem] md:rounded-[1.35rem] transition-all duration-300;
+  }
+  .active {
+    @apply text-[var(sColor)];
   }
 
   .vid-wrapper {

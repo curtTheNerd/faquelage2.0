@@ -3,8 +3,11 @@ import Gallery from "../functionalComponents/Gallery";
 const About = () => {
   return (
     <div className="flex-container-cols" id="about">
-      <h2>About</h2>
-      <section className="">
+      <h2>About Us</h2>
+
+      <Gallery />
+
+      <section className="pt-[4rem]">
             <p className='pb-[2.5rem]'>Faquelage [faklaʒ] - dieses französische Kunstwort erdachte sich das Leipziger Trio, um in kleiner Besetzung große Melodien 
             zu spielen. Angefangen hat alles mit bekannten und weniger bekannten Titeln aus der Filmmusik. Inzwischen reisen die drei jungen 
             Musizierenden auch in  ihren Eigenkompositionen in fantastische Welten und Traumlandschaften und gestalten diese durch  spontane 
@@ -27,8 +30,6 @@ const About = () => {
             die noch nie ein Instrument angefasst haben, genießen können."</p>
             <p className='pb-[3em] text-center'>Arne Herrmann - Komponist</p><br></br>
       </section>
-
-      <Gallery />
       
     </div>
   )

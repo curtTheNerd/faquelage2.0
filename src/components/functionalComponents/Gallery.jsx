@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AboutData as Data } from '../../components/Data';
 
 import AboutCard from './AboutCard';
-import Modal from "../contentComponents/Modal";
+import Modal from "./Modal";
 
 
 const Gallery = () => {      

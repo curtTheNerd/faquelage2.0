@@ -1,30 +1,28 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Background from "./components/Background";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Datenschutz from "./components/contentComponents/Datenschutz";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+
+import HomePage from "./components/contentComponents/HomePage";
 import About from "./components/contentComponents/About";
 import Media from "./components/contentComponents/Media";
 import Tour from "./components/contentComponents/Tour";
-import News from "./components/contentComponents/News";
-import HomeBanner from "./components/contentComponents/hero section/HomeBanner";
-import HomeTitle from "./components/contentComponents/hero section/HomeTitle";
+import Datenschutz from "./components/contentComponents/Datenschutz";
+import RootLayout from "./layout/RootLayout";
 
 const App = () => {
-  return(
-    <>
-      <Background />
-      <Navbar />
-      
-      <HomeBanner></HomeBanner>
-      <HomeTitle />
-      <News />
-      <Tour />
-      <About />
-      <Media />
+  
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />} >
+        <Route index element={<HomePage />} />
+        <Route path='tour' element={<Tour />} />
+        <Route path='about' element={<About />} />
+        <Route path='media' element={<Media />} />
+        <Route path='datenschutz' element={<Datenschutz />} />
+      </Route>    
+    )
+  )
 
-      <Footer />
-    </>
+  return(
+    <RouterProvider router={router} />
   )
 }
 

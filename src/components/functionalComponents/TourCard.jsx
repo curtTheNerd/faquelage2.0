@@ -7,7 +7,7 @@ const TourCard = (data) => {
                     <h4 className="">{data.datum}</h4>
                     <h4 className="">{data.ort}</h4>
                 </div>
-                <h5 className="transition-all duration-500 hover:text-[var(--sColor)]">{data.location}</h5>
+                <h4 className="transition-all duration-500 hover:text-[var(--sColor)]">{data.location}</h4>
             </div>
         </a>
     )
